@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "rest_framework",
     "notes",
+    "rest_framework.authtoken",
 
 ]
 
@@ -124,3 +125,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# model User from app notes for custom user model bcz we need phone number also for the user information 
+AUTH_USER_MODEL="notes.User"
